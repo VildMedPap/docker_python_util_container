@@ -17,7 +17,7 @@ docker build -t name-of-your-choice .
 ## Run command
 
 ```sh
-docker run -v ${PWD}:/data name-of-your-choice
+docker run -v ${PWD}:/data --rm name-of-your-choice
 ```
 
 ## Example
