@@ -1,5 +1,5 @@
 FROM python:3.8.0 AS build
-RUN apt-get update && apt-get install gcc -y && apt-get clean
+RUN apt-get update && apt-get install --no-install-recommends gcc -y && apt-get clean
 COPY requirements.txt requirements.txt
 RUN pip install --user --no-cache-dir -r requirements.txt
 
